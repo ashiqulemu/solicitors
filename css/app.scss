@@ -1,0 +1,78 @@
+$primary:#0038C5 !important;
+$txt:#585858;
+
+
+// font
+
+@font-face {
+    font-family: "poppins-regular";
+    src: url(../fonts/Poppins-Regular.otf);
+}
+
+@font-face {
+    font-family: "poppins-medium";
+    src: url(../fonts/Poppins-Medium.otf);
+}
+
+@font-face {
+    font-family: "poppins-bold";
+    src: url(../fonts/Poppins-Bold.otf);
+}
+
+@font-face {
+    font-family: "poppins-Light";
+    src: url(../fonts/Poppins-Light.otf);
+}
+
+
+.flex-fill {
+    flex: 1 !important;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'poppins-light';
+}
+
+// top bar css
+
+.topbar {
+    border-bottom: 1px solid #d3d3d363;
+
+    .items {
+        font-size: 14px;
+        color: $txt;
+
+        .iconify {
+            font-size: 18px;
+            color: $primary;
+        }
+    }
+}
+
+
+//   navbar css
+
+.siteHeader {
+    .navCustom {
+        .nav-item {
+            .nav-link {
+                margin-right: 14px;
+                font-size: 17px;
+                font-family: 'poppins-light';
+                color: #525252;
+
+                &.active {
+                    font-weight: bold;
+                    color: $primary;
+                }
+
+                &:hover { 
+                    color: $primary;
+                }
+            }
+
+
+        }
+    }
+}

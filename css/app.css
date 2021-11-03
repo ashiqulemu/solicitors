@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "poppins-regular";
+  src: url(../fonts/Poppins-Regular.otf);
+}
+
+@font-face {
+  font-family: "poppins-medium";
+  src: url(../fonts/Poppins-Medium.otf);
+}
+
+@font-face {
+  font-family: "poppins-bold";
+  src: url(../fonts/Poppins-Bold.otf);
+}
+
+@font-face {
+  font-family: "poppins-Light";
+  src: url(../fonts/Poppins-Light.otf);
+}
+
+.flex-fill {
+  -webkit-box-flex: 1 !important;
+      -ms-flex: 1 !important;
+          flex: 1 !important;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'poppins-light';
+}
+
+.topbar {
+  border-bottom: 1px solid #d3d3d363;
+}
+
+.topbar .items {
+  font-size: 14px;
+  color: #585858;
+}
+
+.topbar .items .iconify {
+  font-size: 18px;
+  color: #0038C5 !important;
+}
+
+.siteHeader .navCustom .nav-item .nav-link {
+  margin-right: 14px;
+  font-size: 17px;
+  font-family: 'poppins-light';
+  color: #525252;
+}
+
+.siteHeader .navCustom .nav-item .nav-link.active {
+  font-weight: bold;
+  color: #0038C5 !important;
+}
+
+.siteHeader .navCustom .nav-item .nav-link:hover {
+  color: #0038C5 !important;
+}
+/*# sourceMappingURL=app.css.map */
