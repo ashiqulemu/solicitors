@@ -1,3 +1,11 @@
+.footer-bg {
+  background: #2e4976;
+}
+
+html {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: "poppins-regular";
   src: url(../fonts/Poppins-Regular.otf);
@@ -105,6 +113,12 @@ body {
   z-index: -1;
 }
 
+@media (max-width: 768px) {
+  .sectionTitle::before {
+    display: none;
+  }
+}
+
 .services .items {
   height: 250px;
   overflow: hidden;
@@ -176,24 +190,52 @@ body {
   background: #18326f5d;
 }
 
-#map {
-  height: 80%;
-  width: 50%;
+.slick-dots li button {
+  background: lightgrey !important;
 }
 
-.swiper-container {
-  max-width: 100%;
-  overflow-x: hidden;
-  height: auto;
+.slick-dots li button:before {
+  opacity: 0 !important;
 }
 
-.swiper-slide {
-  color: #000;
-  text-align: center;
-  padding: 0px;
+.slick-dots li.slick-active button {
+  background: #0038C5 !important;
 }
 
-.swiper-wrapper {
-  height: auto;
+#contact {
+  font-size: 16px;
+  font-family: "poppins-Light";
+}
+
+footer .nav-item a {
+  color: lightgray !important;
+  text-decoration: none;
+}
+
+footer .nav-item a:hover {
+  color: white !important;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #0d6efd;
+}
+
+.social a .iconify {
+  font-size: 1.5rem;
+}
+
+.social a:hover {
+  color: lightgray;
 }
 /*# sourceMappingURL=app.css.map */

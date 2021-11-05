@@ -1,7 +1,12 @@
 $primary:#0038C5 !important;
 $txt:#585858;
 
-
+.footer-bg{
+    background: #2e4976;
+}
+html{
+    overflow-x: hidden;
+}
 // font
 
 @font-face {
@@ -34,12 +39,12 @@ body {
     font-family: 'poppins-light';
 }
 
-.txt-default{
+.txt-default {
     color: #64686a;
 }
 
-.bg-primary{
-    background-color: $primary!important;
+.bg-primary {
+    background-color: $primary !important;
 }
 
 // top bar css
@@ -85,10 +90,12 @@ body {
         }
     }
 }
+
 // slider css
 
 .carousel-indicators {
     bottom: 15px;
+
     button {
         height: 10px !important;
         width: 10px !important;
@@ -119,11 +126,18 @@ body {
         left: -16%;
         right: -8%;
         z-index: -1;
+
+        
+    }
+    @media(max-width:768px) {
+        &::before {display: none;}
+        
     }
 }
+
 // services
 
-.services { 
+.services {
     .items {
         height: 250px;
         overflow: hidden;
@@ -182,22 +196,58 @@ body {
         }
     }
 }
-#map { height: 80%;
-    width: 50%;
- }
- 
 
- .swiper-container {
-    max-width: 100%;
-    overflow-x: hidden;
-    height:auto; 
-  }
-  
-  .swiper-slide {
-    color: #000;
-    text-align: center;
-    padding:  0px;
-  }
-  .swiper-wrapper{
-  height:auto;
-  }
+.slick-dots li button {
+    background: lightgrey!important;
+    &:before{
+        opacity: 0!important;
+    }
+}
+.slick-dots{
+    li{
+        &.slick-active{
+          button{
+            background: #0038C5!important;
+            
+          }
+        }
+    }
+}
+
+#contact{
+    font-size: 16px;
+    font-family: "poppins-Light";
+    .iconify{
+ 
+    }
+}
+
+footer{
+    .nav-item{
+        a{
+            color: lightgray!important;
+            text-decoration: none;
+            &:hover{
+                color: white!important;
+            }
+        }
+    }
+
+
+}
+
+.social{
+    display: flex; 
+    align-items: center;
+    a{
+        margin: 0 10px;
+        text-decoration: none;
+        .iconify{
+            font-size: 1.5rem;
+            }
+        color: #0d6efd;
+        &:hover{
+            color: lightgray;
+        }
+    }
+}
