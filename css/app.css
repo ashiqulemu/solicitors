@@ -73,6 +73,7 @@ body {
 @media (max-width: 600px) {
   .topbar {
     background: #172887 !important;
+    padding: 4px;
   }
 }
 
@@ -81,17 +82,21 @@ body {
   color: #fff;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .topbar .items {
     font-size: 15px;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding: 0 !important;
   }
 }
 
 .topbar .items .iconify {
+  margin-right: 5px;
   font-size: 18px;
   color: #fff;
 }

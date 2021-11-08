@@ -74,25 +74,30 @@ body {
 .topbar {
     border-bottom: 1px solid #d3d3d363;
     background: $primary;
+
     @media (max-width:600px) {
-         background: #172887 !important;
+        background: #172887 !important;
+        padding: 4px;
     }
+
     .items {
         font-size: 16px;
         color: #fff;
 
-        @media (max-width:600px) {
+        @media (max-width:768px) {
             font-size: 15px;
-            flex: 1;  
-            padding: 0!important;
+            flex: 1;
+            display: flex;
+            padding: 0 !important;
         }
 
         .iconify {
+            margin-right: 5px;
             font-size: 18px;
             color: #fff;
         }
     }
-     
+
 }
 
 //   navbar css
