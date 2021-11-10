@@ -73,26 +73,37 @@ body {
 
 .topbar {
     border-bottom: 1px solid #d3d3d363;
-    background: $primary;
-
-    @media (max-width:600px) {
-        background: #172887 !important;
-        padding: 4px;
+    //background: $primary;
+    .inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 5px;
     }
+
 
     .items {
         font-size: 16px;
         color: #fff;
-
+        background: #003AC8 !important;
+        padding: 5px 14px;
+        border-radius: 19px;
+   
         @media (max-width:768px) {
             font-size: 15px;
             flex: 1;
-            display: flex;
-            padding: 0 !important;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+        }
+        @media (max-width:600px) { 
+            padding: 9px;
+            font-size: 13px!important;
         }
 
         .iconify {
-            margin-right: 5px;
+            margin-right: 3px;
             font-size: 18px;
             color: #fff;
         }
