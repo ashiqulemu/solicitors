@@ -73,8 +73,9 @@ body {
 
 .topbar {
     border-bottom: 1px solid #d3d3d363;
+
     //background: $primary;
-    .inner{
+    .inner {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -86,20 +87,22 @@ body {
     .items {
         font-size: 16px;
         color: #fff;
-        background: #003AC8 !important;
+        background: $primary;
         padding: 5px 14px;
         border-radius: 19px;
-   
+        font-family: 'poppins-medium';
+
         @media (max-width:768px) {
             font-size: 15px;
             flex: 1;
-            display: flex; 
+            display: flex;
             justify-content: center;
             align-items: center;
         }
-        @media (max-width:600px) { 
-            padding: 9px;
-            font-size:16px!important;
+
+        @media (max-width:600px) {
+            padding: 6px;
+            font-size: 15px !important;
         }
 
         .iconify {
@@ -117,7 +120,7 @@ body {
     .navbar-brand {
         img {
             @media(max-width:375px) {
-               width:200px;
+                width: 200px;
             }
         }
     }
@@ -542,4 +545,31 @@ footer {
     color: #fff;
     background-color: $primary;
     border-color: $primary;
+}
+
+.addressLocation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    height: 100%;
+    background: #1f3ac8;
+
+    .inner {
+        font-family: "poppins-medium";
+        padding: 30px;
+        font-size: 1.5rem;
+
+        p {
+            margin-bottom: 0;
+            color: #ffc107;
+            .iconify{
+                margin-right: 5px;
+                color: #0097ef;
+            }
+            span { 
+                color: #fff;
+            }
+        }
+    }
 }
