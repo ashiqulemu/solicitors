@@ -449,11 +449,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9 text-muted">
-                  <div class=" d-flex align-items-center"><span class="iconify" data-icon="fluent:cookies-20-regular"></span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio autem quos corporis praesentium atque,
-                    in
-                    minima asperiores earum eius eaque iure nemo quas doloremque iste laudantium, error est! Libero,
-                    magni!</div>  
+                    <div class=" d-flex align-items-start justify-content-center flex-column"> 
+                        <div>
+                             <span class="iconify"
+                            data-icon="fluent:cookies-20-regular"></span>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio autem quos corporis
+                            praesentium atque,
+                            in
+                            minima asperiores earum eius eaque iure nemo quas doloremque iste laudantium, error est!
+                            Libero,
+                            magni! 
+                           <a href="" class="ml-4">More...</a>
+                       </div> 
+                    </div> 
                 </div>
                 <div class="col-md-3 d-flex align-items-center ">
                     <button class="btn btn-sm btn-primary" onclick="closeCookies()">Accept</button>
@@ -464,12 +472,12 @@
 
     <script>
         setTimeout(function () {
-                   let cookies = document.getElementById('cookies').classList.add('active')
-             }, 4000);
+            let cookies = document.getElementById('cookies').classList.add('active')
+        }, 4000);
 
-             function closeCookies(){
-                let cookies = document.getElementById('cookies').classList.add('close');
-             }
+        function closeCookies() {
+            let cookies = document.getElementById('cookies').classList.add('close');
+        }
     </script>
 
     <script src="js/bootstrap-5.bundle.min.js"></script>
