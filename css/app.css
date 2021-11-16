@@ -346,6 +346,7 @@ footer .nav-item a:hover {
 }
 
 .banner .title {
+  display: none;
   font-size: 62px;
   color: #1f3ac8;
   font-weight: bold;
