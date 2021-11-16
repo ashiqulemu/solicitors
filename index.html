@@ -301,11 +301,15 @@
                     <div class="addressLocation mb-3">
                         <div class="inner">
                             <p><span class="iconify" data-icon="clarity:map-marker-outline-badged"></span>
-                                 <span>Address:</span><br> 101G Peel House, 34-44 London Road Morden Surrey SM4 5BT
-                              </p>
-                            <p><span class="iconify" data-icon="carbon:phone-ip"></span><span>Phone:</span> <br>02037735166</p>
+                                <span>Address:</span><br> 101G Peel House, 34-44 London Road Morden Surrey SM4 5BT
+                            </p>
+                            <p><span class="iconify" data-icon="carbon:phone-ip"></span><span>Phone:</span>
+                                <br>02037735166
+                            </p>
                             <p><span class="iconify" data-icon="la:fax"></span><span>Fax:</span> <br>02037735167</p>
-                            <p><span class="iconify" data-icon="carbon:email"></span><span>Email:</span> <br>mail@avistasolicitors.co.uk</p>
+                            <p><span class="iconify" data-icon="carbon:email"></span><span>Email:</span>
+                                <br>mail@avistasolicitors.co.uk
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -440,6 +444,34 @@
         </div>
     </footer>
 
+
+    <div class="cookies" id="cookies">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 text-muted">
+                  <div class=" d-flex align-items-center"><span class="iconify" data-icon="fluent:cookies-20-regular"></span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio autem quos corporis praesentium atque,
+                    in
+                    minima asperiores earum eius eaque iure nemo quas doloremque iste laudantium, error est! Libero,
+                    magni!</div>  
+                </div>
+                <div class="col-md-3 d-flex align-items-center ">
+                    <button class="btn btn-sm btn-primary" onclick="closeCookies()">Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function () {
+                   let cookies = document.getElementById('cookies').classList.add('active')
+             }, 4000);
+
+             function closeCookies(){
+                let cookies = document.getElementById('cookies').classList.add('close');
+             }
+    </script>
+
     <script src="js/bootstrap-5.bundle.min.js"></script>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <script src="js/iconify.min.js"></script>
@@ -486,6 +518,7 @@
             cycle: true
         });
     </script>
+
 </body>
 
 </html>

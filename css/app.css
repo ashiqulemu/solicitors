@@ -566,4 +566,36 @@ footer .nav-item a:hover {
 .addressLocation .inner p span {
   color: #fff;
 }
+
+.cookies {
+  visibility: hidden;
+  position: fixed;
+  padding: 20px;
+  background-color: #fff;
+  bottom: 0;
+  width: 100%;
+  -webkit-box-shadow: 0 0 20px 2px #00000029;
+          box-shadow: 0 0 20px 2px #00000029;
+  border-top: 1px solid #cfcfcf;
+}
+
+.cookies .text-muted {
+  color: #525252 !important;
+  font-size: 14px;
+}
+
+.cookies .text-muted .iconify {
+  font-size: 5rem;
+  float: left;
+  color: #1f3ac8;
+  margin-right: 12px;
+}
+
+.cookies.active {
+  visibility: visible;
+}
+
+.cookies.close {
+  display: none;
+}
 /*# sourceMappingURL=app.css.map */

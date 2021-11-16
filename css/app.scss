@@ -563,13 +563,46 @@ footer {
         p {
             margin-bottom: 0;
             color: #ffc107;
-            .iconify{
+
+            .iconify {
                 margin-right: 5px;
                 color: #0097ef;
             }
-            span { 
+
+            span {
                 color: #fff;
             }
         }
+    }
+}
+
+.cookies {
+    visibility: hidden;
+    position: fixed;
+    padding: 20px;
+    background-color: #fff;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 0 20px 2px #00000029;
+    border-top: 1px solid #cfcfcf;
+
+    .text-muted {
+        color: #525252 !important;
+        font-size: 14px;
+
+        .iconify {
+            font-size: 5rem;
+            float: left;
+            color: #1f3ac8;
+            margin-right: 12px;
+        }
+    }
+
+    &.active {
+        visibility: visible;
+    }
+
+    &.close {
+        display: none;
     }
 }
