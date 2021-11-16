@@ -574,9 +574,9 @@ footer .nav-item a:hover {
   background-color: #fff;
   bottom: 0;
   width: 100%;
-  -webkit-box-shadow: 0 0 20px 2px #00000029;
-          box-shadow: 0 0 20px 2px #00000029;
-  border-top: 1px solid #cfcfcf;
+  -webkit-box-shadow: 2px 2px 19px 6px #00000029;
+          box-shadow: 2px 2px 19px 6px #00000029;
+  border-top: 1px solid #356ffd1c;
 }
 
 .cookies .text-muted {
